@@ -36,7 +36,7 @@ async def create_event(body: Event = Body(...)) -> dict:
     }
     
 @event_router.delete("/{id}")
-async def delete_event(id: int) -> dict:
+async def delete_event(id: int):
     for event in events:
         if event.id == id:
             events.remove(event)
