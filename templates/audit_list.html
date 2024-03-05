@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Head Test</title>
+</head>
+
+<body>
+    <!-- <a href="/">HOME</a> -->
+    <h1>Body Test</h1>
+    
+    <!--
+    <form action="/audit" method="post">
+        <input type="text" id="title_" name="title" value="진단제목" />
+        <input type="text" id="auditor_" name="auditor" value="이름" />
+        <input type="submit">등록</input>
+    </form>
+    
+    <div id="audit_table">
+        <table width="100%" border="1" cellpadding="0" cellspacing="0">
+            {% if audits %}
+                {% for audit in audits %}
+                    <tr>
+                        <form action="/audits" method="post">
+                            <td align="center"><input type="text"  name="audit_id" value={{audit.id}}></td>
+                            <td align="center"><input type="text" id="title_{{audit.id}}" name="n_title" value="{{audit.title}}" /></td>
+                            <td align="center"><input type="text" id="auditor_{{audit.id}}" name="n_auditor" value="{{audit.auditor}}" /></td>
+                            <td align="center"><input type="submit" value="수정"/></td>
+                        </form>
+                        <form action="/delete/{{audit.id}}" method="post">
+                            <td align="center">
+                                <input type="submit" value="삭제"/>
+                            </td>
+                        </form>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td align="center" colspan="6">No user...</td>
+                </tr>
+            {% endif %}
+        </table>
+    </div>
+    -->
+</body>
+</html>
